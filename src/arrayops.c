@@ -17,6 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
+#include "../src/arrayops.h"
 
 int arraySum(int arr[], int arr_len)
 {
@@ -48,6 +49,18 @@ int arrayMax(int arr[], int arr_len)
         max = arr[i];
    }
    return max;
+}
+
+int arrayMin(int arr[], int arr_len)
+{
+   int i;
+   int min = arr[0];
+   for (i=1; i<arr_len; i++)
+   {
+     if (arr[i] < min)
+        min = arr[i];
+   }
+   return min;
 }
 
 void arrayPrint(int arr[], int arr_len)

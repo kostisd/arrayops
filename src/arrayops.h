@@ -17,11 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
+#include <stdio.h>
 
 int arraySum(int arr[], int arr_len);
 
 double arrayMean(int arr[], int arr_len);
 
 int arrayMax(int arr[], int arr_len);
+
+int arrayMin(int arr[], int arr_len);
 
 void arrayPrint(int arr[], int arr_len);
