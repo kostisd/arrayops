@@ -28,3 +28,5 @@ int arrayMax(int arr[], int arr_len);
 int arrayMin(int arr[], int arr_len);
 
 void arrayPrint(int arr[], int arr_len);
+
+void reverseArray(int arr[], int len);

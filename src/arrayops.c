@@ -63,6 +63,20 @@ int arrayMin(int arr[], int arr_len)
    return min;
 }
 
+void reverseArray(int arr[], int len)
+{
+  int tmp;
+  int end = len - 1;
+//  size /= 2;
+  for (int i = 0; i < end; i++, end--)
+  {
+    tmp = arr[i];
+    arr[i] = arr[end];
+    arr[end] = tmp;
+  }
+}
+
+
 void arrayPrint(int arr[], int arr_len)
 {
    int i;
